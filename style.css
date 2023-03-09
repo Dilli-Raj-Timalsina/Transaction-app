@@ -1,0 +1,84 @@
+/** @format */
+
+.nav_style {
+  border-radius: 15px;
+  padding-left: 10px;
+  margin: 0;
+  border-style: none;
+  width: 100px;
+}
+body {
+  background: rgba(116, 116, 116, 0.307);
+}
+.movements {
+  background: white;
+}
+.operation--transfer {
+  border-radius: 15px;
+  background: linear-gradient(
+    to top left,
+    hsla(41, 100%, 51%, 0.656),
+    hsla(0, 100%, 51%, 0.595)
+  );
+}
+.operation--loan {
+  border-radius: 15px;
+
+  background: linear-gradient(to top left, #03ff188d, #03ff189d);
+}
+.operation--close {
+  border-radius: 15px;
+  background: linear-gradient(to top left, #ff03318b, #ff032977);
+}
+.form__btn {
+  border-radius: 15px;
+  border-style: none;
+  width: 60px;
+}
+.form__input {
+  border-radius: 15px;
+  border-style: none;
+  padding-left: 10px;
+}
+.movements {
+  border-radius: 15px !important;
+}
+.moment-row {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border-style: none;
+  border-bottom-color: rgb(185, 124, 46);
+  background: ghostwhite;
+}
+.summary {
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 1rem;
+}
+.btn--sort {
+  border-radius: 15px;
+  border-style: none;
+  width: 100px;
+}
+.movements__type--deposit {
+  text-align: center;
+  border-radius: 15px;
+  border-style: none;
+  margin-left: 3px;
+  width: 120px;
+
+  background: linear-gradient(rgba(69, 255, 1, 0.686), rgba(21, 255, 0, 0.72));
+}
+.movements__type--withdrawl {
+  text-align: center;
+  border-radius: 15px;
+  border-style: none;
+  margin-left: 3px;
+  width: 120px;
+
+  background: linear-gradient(rgba(255, 0, 0, 0.392), rgba(255, 0, 0, 0.621));
+}
+.userInfo {
+  display: block;
+}
