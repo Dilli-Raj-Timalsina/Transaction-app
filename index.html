@@ -1,0 +1,167 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Bankist</title>
+  </head>
+  <body>
+    <section class="navigation">
+      <div class="userInfo">
+        <!-- <div class="d-flex justify-content-center">
+          <p class="lead m-0">Welcome to the Simple Pseudo Trasection Page. </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <p class="d-block m-0">You may use: </br>Username: ss Pin: 3333 </br> Username:sr Pin:4444 
+          </p> 
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class="login__btn ">Ok</button>
+        </div> -->
+      </div>
+      <nav class="pt-3 ms-3 navig d-flex justify-content-around">
+        <p class="fw-bold welcome">Log In To Get Started</p>
+        <div>
+          <img src="logo.png " style="height: 50px; width: 50px" alt="" />
+        </div>
+        <div class="input_style">
+          <label for="user">User Name:</label>
+          <input type="text" id="user" class="nav_style login__input--user" />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="nav_style login__input--pin"
+          />
+          <button class="rounded-3 login__btn">&rarr;</button>
+        </div>
+      </nav>
+      <div class="app d-none">
+        <div class="container mt-3">
+          <div class="balance d-flex justify-content-between">
+            <div>
+              <p class="balance__label lead fw-bold text-success text-center">
+                Current balance
+              </p>
+              <p class="balance__date text-center">
+                As of
+                <span class="date date-current lead fw-bold">05/03/2037</span>
+              </p>
+            </div>
+            <p class="balance__value lead fw-bold text-xl text-success me-5">
+              0000€
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-6 movements">
+              <!-- <div class="moment-row d-flex justify-content-around">
+              <div class="movements__type movements__type--deposit">
+                2 deposit
+              </div>
+              <div class="movements__date">3 days ago</div>
+              <div class="movements__value">4 000€</div>
+            </div>
+            <div class="moment-row d-flex justify-content-around">
+              <div class="movements__type movements__type--withdrawl">
+                1 withdrawl
+              </div>
+              <div class="movements__date">3 days ago</div>
+              <div class="movements__value">2 000€</div>
+            </div> -->
+            </div>
+            <div class="col-6">
+              <!-- Operation Transfer -->
+              <div class="operation operation--transfer p-3">
+                <h2>Transfer money</h2>
+                <form class="form form--transfer">
+                  <input type="text" class="form__input form__input--to" />
+                  <input
+                    type="number"
+                    class="form__input form__input--amount"
+                  />
+                  <button class="form__btn form__btn--transfer">&rarr;</button>
+                  <label class="form__label me-5">Transfer to</label>
+                  <label class="form__label ms-5 ps-4">Amount</label>
+                </form>
+              </div>
+              <!-- loan -->
+              <div class="operation operation--loan p-3 m-3">
+                <h2>Request loan</h2>
+                <form class="form form--loan">
+                  <input
+                    type="number"
+                    class="form__input form__input--loan-amount"
+                  />
+                  <button class="form__btn form__btn--loan">&rarr;</button>
+                  <label class="form__label d-block form__label--loan">
+                    Amount
+                  </label>
+                </form>
+              </div>
+              <!-- close app/log out -->
+              <div class="operation operation--close m-3 p-3">
+                <h2>Close account</h2>
+                <form class="form form--close">
+                  <input type="text" class="form__input form__input--user" />
+                  <input
+                    type="password"
+                    maxlength="6"
+                    class="form__input form__input--pin"
+                  />
+                  <button class="form__btn form__btn--close">&rarr;</button>
+                  <label class="form__label ms-3">Confirm user</label>
+                  <label class="form__label ms-5 ps-4">Confirm PIN</label>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="summary d-flex justify-content-around">
+            <div>
+              <p class="d-inline-flex summary__label">In</p>
+              <p
+                class="d-inline-flex lead fw-bold text-success summary__value summary__value--in"
+              >
+                0000€
+              </p>
+            </div>
+            <div>
+              <p class="d-inline-flex summary__label">Out</p>
+              <p
+                class="d-inline-flex lead fw-bold text-danger summary__value summary__value--out"
+              >
+                0000€
+              </p>
+            </div>
+            <div>
+              <p class="d-inline-flex summary__label">Interest</p>
+              <p
+                class="d-inline-flex text-success lead fw-bold summary__value summary__value--interest"
+              >
+                0000€
+              </p>
+            </div>
+
+            <button class="btn--sort">&downarrow; SORT</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
